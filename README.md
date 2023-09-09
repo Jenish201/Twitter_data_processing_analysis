@@ -1,9 +1,5 @@
----
-title: Twitter Data Processing and Analysis
-date: 2023-08-22 06:10:00 -0500
----
 
-
+# Twitter Data Processing and Analysis
 In this portfolio project, I tackled the task of processing and analyzing Twitter data. The project involves several key components, including data retrieval from a web server, data storage in a SQLite database, data manipulation and analysis, and performance evaluation.
 
 
@@ -40,4 +36,6 @@ In this portfolio project, I tackled the task of processing and analyzing Twitte
 ### Conclusion:
 This project demonstrates my proficency in data processing, database management, and performance analysis. It highlights my ability to work with real-world data and optimize code for efficiency.
 
-If you would like to check out the repository please:    [click here](https://github.com/Jenish201/Twitter_data_processing_analysis)
+### Performance analysis graph
+Below is a graph showcasing run times for two different tweet counts, 130000 and 650000 tweets. I ran the same functions for both tweet counts and created a line graph showcasing the different run times for each tweet count.
+![A graph showcasing different runtimes for different tweets]()

@@ -38,4 +38,4 @@ This project demonstrates my proficency in data processing, database management,
 
 ### Performance analysis graph
 Below is a graph showcasing run times for two different tweet counts, 130000 and 650000 tweets. I ran the same functions for both tweet counts and created a line graph showcasing the different run times for each tweet count.
-![A graph showcasing different runtimes for different tweets]()
+![A graph showcasing different runtimes for different tweets](https://github.com/Jenish201/Twitter_data_processing_analysis/blob/main/performance_analysis.jpg)

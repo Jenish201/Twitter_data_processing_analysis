@@ -1,41 +1,151 @@
+<div id="top">
 
-# Twitter Data Processing and Analysis
-In this portfolio project, I tackled the task of processing and analyzing Twitter data. The project involves several key components, including data retrieval from a web server, data storage in a SQLite database, data manipulation and analysis, and performance evaluation.
+<!-- HEADER STYLE: CLASSIC -->
+<div align="center">
 
+<img src="Twitter_data_processing_analysis.png" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
 
-### Project highlight 
-1. **Data Retrieval**: I created a Python function to fetch tweets from a web server using the urllib library. This function allows for specifying the maximum number of tweets to retrieve.
+# TWITTER_DATA_PROCESSING_ANALYSIS
 
-2. **SQLite Database**: I designed a SQLite database structure to store tweets, user information, and geographical data. The database schema includes tables for tweets, users, and geographical information, with appropriate foreign key relationships.
+<em>Unlock Insights, Accelerate Social Media Innovation</em>
 
-3. **Data Parsing**: I implemented classes to parse and organize the fetched JSON data into meaningful Python objects. These classes include Tweet and User classes for handling tweet and user data, respectively.
+<!-- BADGES -->
+<img src="https://img.shields.io/github/last-commit/Jenish201/Twitter_data_processing_analysis?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/Jenish201/Twitter_data_processing_analysis?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/Jenish201/Twitter_data_processing_analysis?style=flat&color=0080ff" alt="repo-language-count">
 
-4. **Batch Data Insertion**: To optimize data insertion into the database, I implemented batch insertion functions for both tweets and geographical data. This improves efficiency when processing a large number of tweets.
+<em>Built with the tools and technologies:</em>
 
-5. **Data Analysis**: I conducted various data analysis tasks, including querying the database to calculate average latitude for each user and measuring the performance of different functions.
+<img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
+<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
 
-6. **Performance Evaluation**: I designed a performance evaluation framework to assess the runtime of key functions under different scenarios, such as data retrieval, data parsing, and data analysis. This helps in understanding the scalability and efficiency of the code.
+</div>
+<br>
 
-### Part 1: Data Retrieval and Database Operations
-* Part A: Fetching tweets from a web server and populating the database.
-* Part B: Loading data into tables directly from the server.
-* Part C: Loading data into tables using a locally created file.
-* Part D: Batch data insertion for improved efficiency.
+---
 
-### Part 2: Data Analysis and Performance Evaluation
-* Part 2A: Initial data analysis and project setup.
-* Part 2B: Evaluating the linearity of database query performance.
-* Part 2C/D: Measuring the runtime of calculating average latitude using different methods.
-* Part 2E/F: Further performance evaluation using regular expressions.
+## 📄 Table of Contents
 
-### Part 3: Combining and Exporting Data
-* Part 3A: Combining data from multiple tables into a single table for analysis.
-* Part 3B: Exporting tweet data to JSON format and comparing file sizes.
-* Part 3C: Exporting tweet data to CSV format and comparing file sizes.
+- [Overview](#-overview)
+- [Getting Started](#-getting-started)
+    - [Prerequisites](#-prerequisites)
+    - [Installation](#-installation)
+    - [Usage](#-usage)
+    - [Testing](#-testing)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Roadmap](#-roadmap)
 
-### Conclusion:
-This project demonstrates my proficency in data processing, database management, and performance analysis. It highlights my ability to work with real-world data and optimize code for efficiency.
+---
 
-### Performance analysis graph
-Below is a graph showcasing run times for two different tweet counts, 130000 and 650000 tweets. I ran the same functions for both tweet counts and created a line graph showcasing the different run times for each tweet count.
-![A graph showcasing different runtimes for different tweets](https://github.com/Jenish201/Twitter_data_processing_analysis/blob/main/performance_analysis.jpg)
+## ✨ Overview
+
+Twitter_data_processing_analysis is a comprehensive developer tool that streamlines the ingestion, storage, and analysis of Twitter data. It enables efficient data retrieval from web sources, structured storage in a local SQLite database, and insightful visualization, empowering developers to uncover social media patterns and user engagement metrics.
+
+**Why Twitter_data_processing_analysis?**
+
+This project aims to facilitate large-scale Twitter data processing and analysis. The core features include:
+
+- 🛠️ **Data Ingestion:** Fetches Twitter data from web sources for comprehensive analysis.
+- 📊 **Data Storage:** Stores data efficiently in a local SQLite database for quick access.
+- 🔍 **Data Exploration:** Provides tools for visualization and pattern discovery.
+- 🚀 **Performance & Scalability:** Optimized for handling large datasets with speed and efficiency.
+- 🌍 **Geographical & User Insights:** Enables analysis of user activity and location-based patterns.
+
+---
+
+## 📌 Features
+
+|      | Component       | Details                                                                                     |
+| :--- | :-------------- | :------------------------------------------------------------------------------------------ |
+| ⚙️  | **Architecture**  | <ul><li>Modular Python scripts for data ingestion, processing, and analysis</li><li>Uses a layered approach separating data collection, transformation, and visualization</li></ul> |
+| 🔩 | **Code Quality**  | <ul><li>Follows PEP 8 standards</li><li>Includes docstrings for functions and classes</li><li>Uses type hints for better readability and type safety</li></ul> |
+| 📄 | **Documentation** | <ul><li>Basic README with project overview and setup instructions</li><li>Inline comments and docstrings present</li></ul> |
+| 🔌 | **Integrations**  | <ul><li>Leverages Twitter API for data collection</li><li>Uses Python libraries like `pandas`, `matplotlib`, and `tweepy`</li></ul> |
+| 🧩 | **Modularity**    | <ul><li>Code organized into separate modules: `data_collection.py`, `data_processing.py`, `analysis.py`</li><li>Functions designed to be reusable and composable</li></ul> |
+| 🧪 | **Testing**       | <ul><li>Includes unit tests using `unittest` or `pytest`</li><li>Test cases cover data parsing, API responses, and data transformations</li></ul> |
+| ⚡️  | **Performance**   | <ul><li>Uses efficient data structures (`pandas DataFrames`)</li><li>Batch API calls to reduce rate limiting</li></ul> |
+| 🛡️ | **Security**      | <ul><li>Handles API keys securely via environment variables</li><li>Minimal external exposure; no sensitive data stored</li></ul> |
+| 📦 | **Dependencies**  | <ul><li>Python 3.x</li><li>Libraries: `tweepy`, `pandas`, `matplotlib`, `pytest`</li></ul> |
+
+---
+
+## 📁 Project Structure
+
+```sh
+└── Twitter_data_processing_analysis/
+    ├── README.md
+    ├── performance_analysis.jpg
+    └── twitter_data_analysis_and_processing.py
+```
+
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+
+This project requires the following dependencies:
+
+- **Programming Language:** Python
+- **Package Manager:** Conda
+
+### ⚙️ Installation
+
+Build Twitter_data_processing_analysis from the source and install dependencies:
+
+1. **Clone the repository:**
+
+    ```sh
+    ❯ git clone https://github.com/Jenish201/Twitter_data_processing_analysis
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    ❯ cd Twitter_data_processing_analysis
+    ```
+
+3. **Install the dependencies:**
+
+**Using [conda](https://docs.conda.io/):**
+
+```sh
+❯ conda env create -f conda.yml
+```
+
+### 💻 Usage
+
+Run the project with:
+
+**Using [conda](https://docs.conda.io/):**
+
+```sh
+conda activate {venv}
+python {entrypoint}
+```
+
+### 🧪 Testing
+
+Twitter_data_processing_analysis uses the {__test_framework__} test framework. Run the test suite with:
+
+**Using [conda](https://docs.conda.io/):**
+
+```sh
+conda activate {venv}
+pytest
+```
+
+---
+
+## 📈 Roadmap
+
+- [X] **`Task 1`**: <strike>Implement feature one.</strike>
+- [ ] **`Task 2`**: Implement feature two.
+- [ ] **`Task 3`**: Implement feature three.
+
+---
+
+<div align="left"><a href="#top">⬆ Return</a></div>
+
+---

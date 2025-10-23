@@ -3,7 +3,7 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="Twitter_data_processing_analysis.png" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+<img src="twitter_data_processing_analysis.png" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
 
 # TWITTER_DATA_PROCESSING_ANALYSIS
 
